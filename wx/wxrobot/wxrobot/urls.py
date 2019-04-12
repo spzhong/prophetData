@@ -24,5 +24,5 @@ from .application import myTest
 
 urlpatterns = [
     # url(r'^/', make_view(robot)),
-    url(r'^in/',myTest.indexTest),
+    url(r'^prophetData/',myTest.indexTest),
 ]
