@@ -20,6 +20,8 @@ from werobot.contrib.django import make_view
 from .application import robot
 from .application import myTest
 
+
+
 urlpatterns = [
     url(r'^/', make_view(myrobot)),
     url(r'^in/',myTest.indexTest),
