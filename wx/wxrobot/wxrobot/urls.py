@@ -23,6 +23,6 @@ from .application import myTest
 
 
 urlpatterns = [
-    url(r'^/', make_view(myrobot)),
+    url(r'^/', make_view(robot)),
     url(r'^in/',myTest.indexTest),
 ]
