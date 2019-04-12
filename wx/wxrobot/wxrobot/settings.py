@@ -74,17 +74,17 @@ WSGI_APPLICATION = 'wxrobot.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
-
-DATABASES = {
-    'default': {
-        'ENGINE':'django.db.backends.mysql',
-        'NAME':'ctb',
-        'USER':'ctb',
-        'PASSWORD':'ctb@123456',
-        'HOST':'10.66.145.129',
-        'PORT':'3306',
-        }
-}
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE':'django.db.backends.mysql',
+#         'NAME':'ctb',
+#         'USER':'ctb',
+#         'PASSWORD':'ctb@123456',
+#         'HOST':'10.66.145.129',
+#         'PORT':'3306',
+#         }
+# }
 
 
 # Password validation
