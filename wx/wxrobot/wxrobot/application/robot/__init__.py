@@ -1,5 +1,5 @@
 #coding=utf8
-#from werobot import WeRoBot
+from werobot import WeRoBot
 
 
 print("xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")

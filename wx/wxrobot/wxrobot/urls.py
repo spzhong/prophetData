@@ -22,5 +22,5 @@ from .application import myTest
 
 urlpatterns = [
     # url(r'^/', make_view(robot)),
-    url(r'^prophetData/',myTest.indexTest),
+    url(r'^prophetData/',make_view(robot)),
 ]
