@@ -1,5 +1,8 @@
-#coding=utf8
+# -*- coding: utf-8 -*-
+import json
+
+from django.http import HttpResponse
 
 def indexTest(request):
     print("inininininininininininininininininininininin")
-    pass
+    return HttpResponse("aaaa")
