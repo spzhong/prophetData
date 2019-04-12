@@ -15,7 +15,7 @@ Including another URLconf
 """
 #coding=utf8
 from django.conf.urls import url
-from werobot.contrib.django import make_view
+# from werobot.contrib.django import make_view
 
 from .application import robot
 from .application import myTest
@@ -23,6 +23,6 @@ from .application import myTest
 
 
 urlpatterns = [
-    url(r'^/', make_view(robot)),
+    # url(r'^/', make_view(robot)),
     url(r'^in/',myTest.indexTest),
 ]
