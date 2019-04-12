@@ -2,9 +2,9 @@
 
 from werobot import WeRoBot
 
-robot = WeRoBot(token='token')
+myrobot = WeRoBot(token='token')
 
 
-@robot.handler
+@myrobot.handler
 def hello(message):
     return 'Hello World!'
