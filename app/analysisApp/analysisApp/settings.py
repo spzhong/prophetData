@@ -26,7 +26,7 @@ SECRET_KEY = '6imag&3#e#yhc*kqd+k14r8qxw&fq$r%2hmb+lg%80+0z)57c&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
@@ -123,41 +123,5 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-
-
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'formatters': {
-        'verbose': {
-            'format': '[%(asctime)s] [%(levelname)s] %(message)s'
-        },
-    },
-    'handlers': {
-        'console':{:
-            'level':'INFO',
-            'class':'logging.StreamHandler',
-            'formatter': 'verbose'
-        },
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': 'log/appliction.log',
-            'formatter': 'verbose'
-        },
-        'email': {
-            'level': 'ERROR',
-            'class': 'django.utils.log.AdminEmailHandler',
-            'include_html' : True,
-        }
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['console', 'file', 'email'],
-            'level': 'INFO',
-            'propagate': True,
-        },
-    },
-}
 
 STATIC_URL = '/static/'
