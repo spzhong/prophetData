@@ -23,8 +23,6 @@ def subscribe(message):
 
 
 
-
-
 # 卡片 回复卡片
 @robot.filter('卡片')
 def blog(message):
