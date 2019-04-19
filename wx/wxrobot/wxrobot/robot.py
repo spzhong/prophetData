@@ -2,7 +2,7 @@
 from werobot import WeRoBot
 from werobot.replies import ArticlesReply, Article
 
-robot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
+myrobot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
 # 明文模式不需要下面三项
 # robot.config["APP_ID"]='wxbb2b262238938195'
 # #robot.config["APP_SECRET"]='e5007656796347a71fbc7125ac1d17de'
@@ -10,20 +10,20 @@ robot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
 
 
 # 被关注
-@robot.subscribe
+@myrobot.subscribe
 def subscribe(message):
     return '你好，欢迎关注鸭先知数据！'
 
 
 # 取消关注
-@robot.unsubscribe
+@myrobot.unsubscribe
 def subscribe(message):
      pass
 
 
 
 # 卡片 回复卡片
-@robot.filter('卡片')
+@myrobot.filter('卡片')
 def blog(message):
     reply = ArticlesReply(message=message)
     article = Article(
@@ -37,12 +37,12 @@ def blog(message):
 
 
 # 文本消息返回原文
-@robot.text
+@myrobot.text
 def echo(message):
     return message.content
 
 # @robot.image 修饰的 Handler 只处理图片消息
-@robot.image
+@myrobot.image
 def img(message):
     return message.img
 

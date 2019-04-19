@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url
 from werobot.contrib.django import make_view
-import robot
+from robot import myrobot
 
 urlpatterns = [
-    url(r'^pubAccountNum/', make_view(robot)),
+    url(r'^pubAccountNum/', make_view(myrobot)),
 ]
