@@ -9,10 +9,6 @@ robot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
 # robot.config['ENCODING_AES_KEY'] = 'OWWxHPqt4tkz274VtiLNcpGmQmerlk4E0lWazNUjMHP'
 
 
-def indexInit():
-    return robot
-
-
 # 被关注
 @robot.subscribe
 def subscribe(message):
