@@ -7,7 +7,7 @@ myrobot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
 # robot.config["APP_ID"]='wxbb2b262238938195'
 # #robot.config["APP_SECRET"]='e5007656796347a71fbc7125ac1d17de'
 # robot.config['ENCODING_AES_KEY'] = 'OWWxHPqt4tkz274VtiLNcpGmQmerlk4E0lWazNUjMHP'
-
+myrobot.run()
 
 # 被关注
 @myrobot.subscribe
