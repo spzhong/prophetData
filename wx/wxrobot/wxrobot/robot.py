@@ -1,6 +1,5 @@
 #coding:utf-8
 from werobot import WeRoBot
-import random
 from werobot.replies import ArticlesReply, Article
 
 robot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
