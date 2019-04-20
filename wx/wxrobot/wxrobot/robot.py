@@ -4,6 +4,12 @@ from werobot.replies import ArticlesReply, Article
 
 from .application import wxMsg
 
+from django.db import connections
+
+def close_old_connections():
+    for conn in connections.all():
+        conn.close_if_unusable_or_obsolete()
+
 
 
 myrobot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
