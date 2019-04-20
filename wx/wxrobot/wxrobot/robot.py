@@ -2,6 +2,10 @@
 from werobot import WeRoBot
 from werobot.replies import ArticlesReply, Article
 
+from .application import wxMsg
+
+
+
 myrobot = WeRoBot(token='8cf561d3b980e1143ee962256805be24')
 # 明文模式不需要下面三项
 myrobot.config["APP_ID"]='wxbb2b262238938195'
@@ -39,6 +43,7 @@ def blog(message):
 @myrobot.text
 def echo(message):
     return message.content
+
 
 # @robot.image 修饰的 Handler 只处理图片消息
 @myrobot.image
